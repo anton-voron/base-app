@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.sass';
 import * as serviceWorker from './serviceWorker';
+
+
+
+class App extends Component {
+    render(){
+        return(
+            <h1 className="title">Hello task!</h1>
+        )
+    }
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
